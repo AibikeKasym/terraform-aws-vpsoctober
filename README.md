@@ -1,9 +1,8 @@
 # terraform-aws-vpsoctober
-
-
+```htl
 module "vpc" {
-    source = ""
-    version = "0.0.2"
+    source = "AibikeKasym/vpsoctober/aws"
+    version = "0.0.3"
     region = "us-east-2"
     vpc_cidr = "10.0.0.0/16"
     vpc_name = "aibike"
@@ -13,3 +12,5 @@ module "vpc" {
     instance_type = "t2.micro"
     key_name = "kaizen"
     type = true
+}
+```
